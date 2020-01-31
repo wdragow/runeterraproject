@@ -16,15 +16,13 @@
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
     </environment>
     <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header">
-        <nav class="links" style="--items: 5;">
-            <a class="font-weight-bolder" href="/Home">Runeterra BR</a>
+        <nav class="links" id="menuheader" style="--items: 5;">
+            <a class="font-weight-bolder " href="/Home">Runeterra BR</a>
             <a href="/Cartas">Cartas</a>
-            <a href="#">Decks</a>
+            <a href="/Decks">Decks</a>
             <a href="#">Sla</a>
             <a href="#">Sobre</a>
             <span class="line"></span>
@@ -39,7 +37,7 @@
 
     <footer id="footer">
         <ul>
-            <li>Runeterra BR</li>
+            <li>Runeterra BR ®</li>
         </ul>
     </footer>
 
@@ -62,7 +60,9 @@
         </script>
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
+    <script src="~/js/site.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+
