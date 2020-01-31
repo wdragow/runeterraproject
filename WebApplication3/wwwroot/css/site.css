@@ -14,12 +14,12 @@ html, body {
 
 body {
     background-color: #345 !important;
-    background-image: linear-gradient(to bottom, #0009, transparent) !important;
     color: darkgoldenrod !important;
     font-family: 'Lato', sans-serif;
     font-size: 15px !important;
     padding: 0 20px;
     box-sizing: border-box;
+    background-image: url("/Images/01SI052T1-full.png");
 }
 
 code {
@@ -184,3 +184,8 @@ code {
     .links > a:last-of-type:hover ~ .line {
         --index: var(--items);
     }
+
+
+.custom-title{
+    text-shadow: 1px 10px 10px #000000;
+}
