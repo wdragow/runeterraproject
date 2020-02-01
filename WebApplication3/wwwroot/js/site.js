@@ -3,18 +3,42 @@
 
 // Write your JavaScript code.
 
-$(window).resize(function () {
-    var width = $(window).width();
 
-    if (width < 730) {
-        $('#header').html('<nav class="links" id="menuheader" style="--items: 5;"><i style="font-size:56px;padding-right: 7px;padding-left: 20px;" class="material-icons">list</i></nav>').change();
+$(document).ready(function () {
+
+    var tamanhoTela = $(window).width();
+
+    if (tamanhoTela > 730) {
+
+        $('#menucompact').hide(0.1);
+        $('#menuheader').removeAttr('hidden');
 
     } else {
-        $('#header').html('<nav class="links" id="menuheader" style="--items: 5;"><a class="font-weight-bolder " href="/Home">Runeterra BR</a><a href="/Cartas">Cartas</a><a href="/Decks">Decks</a><a href="#">Sla</a> <a href="#">Sobre</a><span class="line"></span></nav>').change();
 
-
-
-
+        $('#menuheader').hide(0.1);
+        $('#menucompact').removeAttr('hidden');
     }
 
 });
+
+
+$(window).resize(function () {
+
+    var width = $(window).width();
+
+    if (width < 730) {
+        $('#menucompact').removeAttr('hidden');
+        $('#menuheader').hide("fast", "linear", showmenucompacted());
+
+    } else {
+        $('#menuheader').removeAttr('hidden');
+        $('#menucompact').attr('hidden', true);
+        $('#menuheader').fadeIn();
+    }
+
+});
+
+function showmenucompacted() {
+    $('#menucompact').fadeIn("slow", "swing");
+
+};

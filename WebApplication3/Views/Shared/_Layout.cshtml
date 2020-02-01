@@ -19,7 +19,7 @@
 </head>
 <body>
     <header id="header">
-        <nav class="links" id="menuheader" style="--items: 5;">
+        <nav class="links" id="menuheader" style="--items: 5;" hidden>
             <a class="font-weight-bolder " href="/Home">Runeterra BR</a>
             <a href="/Cartas">Cartas</a>
             <a href="/Decks">Decks</a>
@@ -27,6 +27,14 @@
             <a href="#">Sobre</a>
             <span class="line"></span>
         </nav>
+        <div id="menucompact" hidden>
+            <i style="font-size:56px;padding-right: 7px;padding-left: 20px;" class="navbarcompact material-icons">list</i>
+        </div>
+
+
+
+
+
     </header>
     <div class="container">
         <partial name="_CookieConsentPartial" />
@@ -61,7 +69,7 @@
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/site.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     @RenderSection("Scripts", required: false)
 </body>
 </html>

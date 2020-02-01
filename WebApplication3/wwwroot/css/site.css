@@ -23,7 +23,7 @@ body {
 }
 
 code {
-    background: #fff1;
+    background: black;
     font-family: 'Inconsolata', monospace;
     padding: .2em .4em;
 }
@@ -188,4 +188,8 @@ code {
 
 .custom-title{
     text-shadow: 1px 10px 10px #000000;
+}
+
+.navbarcompact{
+    cursor:pointer;
 }
