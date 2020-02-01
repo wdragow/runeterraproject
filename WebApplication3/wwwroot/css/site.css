@@ -193,3 +193,56 @@ code {
 .navbarcompact{
     cursor:pointer;
 }
+
+
+
+
+
+.dropbtn {
+    background-color: transparent;
+    color: goldenrod;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 56px;
+    padding-right: 7px;
+    padding-left: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #123;
+    min-width: 200px;
+    top: 0%;
+    left: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: darkgoldenrod;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #123;
+            box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.2);
+        }
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+

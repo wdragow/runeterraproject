@@ -27,14 +27,18 @@
             <a href="#">Sobre</a>
             <span class="line"></span>
         </nav>
-        <div id="menucompact" hidden>
-            <i style="font-size:56px;padding-right: 7px;padding-left: 20px;" class="navbarcompact material-icons">list</i>
+        <div id="menucompact" hidden>           
+            <div class="dropdown">
+                <button class="dropbtn"><i style="font-size:56px;padding-right: 7px;padding-left: 0px;" class="navbarcompact material-icons">list</i></button>
+                <div class="dropdown-content">
+                    <a class="font-weight-bolder " href="/Home">Runeterra BR</a>
+                    <a href="/Cartas">Cartas</a>
+                    <a href="/Decks">Decks</a>
+                    <a href="#">Sla</a>
+                    <a href="#">Sobre</a>
+                </div>
+            </div>
         </div>
-
-
-
-
-
     </header>
     <div class="container">
         <partial name="_CookieConsentPartial" />
